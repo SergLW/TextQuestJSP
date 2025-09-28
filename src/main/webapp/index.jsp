@@ -33,7 +33,7 @@
                 <div class="col-lg-8">
                     <h1 class="display-5 fw-bold mb-3">Виклик НЛО і втрата пам'яті</h1>
                     <p class="lead mb-4">Чи зможеш ти чесно відповісти на питання? Від відповідей залежить твоя доля.</p>
-                    <form method="get" action="${pageContext.request.contextPath}/game" class="d-inline-block">
+                    <form method="post" action="${pageContext.request.contextPath}/main" class="d-inline-block">
                         <button class="btn btn-primary btn-lg px-4">Почати квест</button>
                     </form>
                 </div>

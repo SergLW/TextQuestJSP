@@ -9,23 +9,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b0d510f-12bb-4903-b7e4-c6873f125a1a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/GameLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/GameState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/SceneType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/service/QuestionsList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/_layout/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/_layout/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/main.css" afterDir="false" />
+    <list default="true" id="2b0d510f-12bb-4903-b7e4-c6873f125a1a" name="Changes" comment="Basic front-end and class tree">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/GameFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/Scenario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/scene/Choice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/scene/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/scene/SceneID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/state/QuestionState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/LoseGameServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/WinGameServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/utils/RequestMdcFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/utils/StepToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/utils/StepTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/utils/helpers/GetHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/utils/helpers/LastGetHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/utils/helpers/LastPostHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/utils/helpers/PostHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/utils/history/GameHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/utils/history/SessionGameHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/textQuest/model/GameEngineTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/textQuest/model/GameFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/textQuest/servlets/utils/StepTokenTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/textQuest/servlets/utils/history/SessionGameHistoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/model/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/GameEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/model/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/state/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/model/SceneType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/scene/SceneType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/model/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/state/WinLoseState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/service/QuestionsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/service/QuestionsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/QuestionsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/QuestionsServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/StartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/StartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/_layout/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/_layout/footer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/game.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/game.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/lose.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/lose.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/win.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/win.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/img/lose-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/img/lose-bg.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +61,7 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -81,7 +103,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.GameEngineTest.executor": "Run",
+    "JUnit.GameFactoryTest.executor": "Run",
+    "JUnit.SessionGameHistoryTest.executor": "Run",
+    "JUnit.StepTokenTest.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.Text_Quest_JSP [-q,-U,clean,test].executor": "Run",
     "Maven.Text_Quest_JSP [-q,dependency:tree,|...].executor": "Run",
     "Maven.Text_Quest_JSP [-q,dependency:tree].executor": "Run",
     "Maven.Text_Quest_JSP [clean].executor": "Run",
@@ -90,6 +117,8 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Tomcat Server.Tomcat 9.0.108.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "basic-front-end-and-class-tree",
     "kotlin-language-version-configured": "true",
     "list.type.of.created.stylesheet": "CSS",
@@ -101,10 +130,27 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.textQuest.model" />
+      <recent name="com.textQuest.model.scene" />
+      <recent name="com.textQuest.service" />
+      <recent name="com.textQuest.model.states" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.textQuest.servlets.utils" />
+      <recent name="com.textQuest.model" />
+      <recent name="com.textQuest.servlets.utils.history" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn -q dependency:tree | grep -E &quot;servlet|jsp|jstl|jakarta&quot;" />
       <command value="mvn -q dependency:tree " />
+      <command value="mvn -q -U clean test" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -120,7 +166,67 @@
       </map>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.108">
+    <configuration name="GameEngineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Text_Quest_JSP (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.textQuest.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.textQuest.model" />
+      <option name="MAIN_CLASS_NAME" value="com.textQuest.model.GameEngineTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Text_Quest_JSP (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.textQuest.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.textQuest.model" />
+      <option name="MAIN_CLASS_NAME" value="com.textQuest.model.GameFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SessionGameHistoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Text_Quest_JSP (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.textQuest.servlets.utils.history.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.textQuest.servlets.utils.history" />
+      <option name="MAIN_CLASS_NAME" value="com.textQuest.servlets.utils.history.SessionGameHistoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StepTokenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Text_Quest_JSP (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.textQuest.servlets.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.textQuest.servlets.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.textQuest.servlets.utils.StepTokenTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.108" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.108" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -285,6 +391,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StepTokenTest" />
+        <item itemvalue="JUnit.GameFactoryTest" />
+        <item itemvalue="JUnit.GameEngineTest" />
+        <item itemvalue="JUnit.SessionGameHistoryTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -303,8 +417,21 @@
       <updated>1758377705595</updated>
       <workItem from="1758377706550" duration="5693000" />
       <workItem from="1758450418325" duration="12421000" />
-      <workItem from="1758472095275" duration="3113000" />
+      <workItem from="1758472095275" duration="3917000" />
+      <workItem from="1758555139430" duration="6904000" />
+      <workItem from="1758731399300" duration="1322000" />
+      <workItem from="1758983513434" duration="10609000" />
+      <workItem from="1759051043346" duration="22380000" />
     </task>
+    <task id="LOCAL-00001" summary="Basic front-end and class tree">
+      <option name="closed" value="true" />
+      <created>1758476574706</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758476574706</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,5 +447,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Basic front-end and class tree" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic front-end and class tree" />
   </component>
 </project>

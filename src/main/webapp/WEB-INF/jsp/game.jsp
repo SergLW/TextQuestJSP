@@ -19,11 +19,11 @@
 
                 <form method="post" action="${pageContext.request.contextPath}/game" class="d-flex gap-2 flex-wrap">
                     <input type="hidden" name="stepToken" value="${sessionScope.stepToken}">
-                    <button name="answer" value="yes" class="btn btn-success btn-lg">
-                        <c:out value="${trueLabel  != null ? trueLabel : 'Так'}"/>
+                    <button name="answer" value="true" class="btn btn-success btn-lg">
+                        <c:out value="${trueLabel}"/>
                     </button>
-                    <button name="answer" value="no" class="btn btn-danger btn-lg">
-                        <c:out value="${falseLabel  != null ? falseLabel  : 'Ні'}"/>
+                    <button name="answer" value="false" class="btn btn-danger btn-lg">
+                        <c:out value="${falseLabel}"/>
                     </button>
                 </form>
             </div>

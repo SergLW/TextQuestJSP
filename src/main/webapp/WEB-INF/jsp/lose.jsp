@@ -12,9 +12,13 @@
                 <h1 class="h3 mb-3">Поразка</h1>
                 <p class="text-muted mb-4"><c:out value="${state.text()}"/></p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <a class="btn btn-outline-secondary btn-lg" href="${pageContext.request.contextPath}/">На головну</a>
-                    <form method="post" action="${pageContext.request.contextPath}/game">
-                        <button class="btn btn-primary btn-lg">Почати знову</button>
+                    <form method="post" action="${pageContext.request.contextPath}/">
+                        <input type="hidden" name="stepToken" value="${sessionScope.stepToken}">
+                        <button name="action" value="home" class="btn btn-primary btn-lg">На головну</button>
+                    </form>
+                    <form method="post" action="${pageContext.request.contextPath}/win">
+                        <input type="hidden" name="stepToken" value="${sessionScope.stepToken}">
+                        <button name="action" value="restart" class="btn btn-primary btn-lg">Почати знову</button>
                     </form>
                 </div>
             </div>

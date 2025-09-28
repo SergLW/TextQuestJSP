@@ -1,0 +1,24 @@
+.hero {
+    position: relative;
+    background: #111 center/cover no-repeat;
+    background-image: url('../static/img/ufo.jpg');
+    min-height: 60vh;
+    display: flex; align-items: center;
+    color: #fff;
+}
+.hero::before {
+    content: ""; position: absolute; inset: 0;
+    background: rgba(0,0,0,.45);
+}
+.hero > .container { position: relative; z-index: 1; }
+.feature-card { height: 100%; }
+
+body.page-game {
+    background: url("../static/img/question-bg.jpg") center/cover no-repeat fixed;
+}
+body.page-win {
+    background: url("../static/img/win.bg.jpg") center/cover no-repeat fixed;
+}
+body.page-lose {
+    background: url("../static/img/lose-bg.jpg") center/cover no-repeat fixed;
+}

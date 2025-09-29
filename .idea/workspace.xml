@@ -9,23 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b0d510f-12bb-4903-b7e4-c6873f125a1a" name="Changes" comment="Game Logic, Servlets, Logger, Tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/StoryServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/story.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/model/GameFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/GameFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/model/Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/Scenario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/model/scene/SceneID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/scene/SceneID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/service/QuestionsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/service/QuestionsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/_layout/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/_layout/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/_layout/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/_layout/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/game.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/game.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/lose.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/lose.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/win.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/win.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/textQuest/model/GameEngineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/textQuest/model/GameEngineTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="2b0d510f-12bb-4903-b7e4-c6873f125a1a" name="Changes" comment="English only. Script expanded. History page added." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -403,7 +387,7 @@
       <workItem from="1758731399300" duration="1322000" />
       <workItem from="1758983513434" duration="10609000" />
       <workItem from="1759051043346" duration="23421000" />
-      <workItem from="1759158510446" duration="4279000" />
+      <workItem from="1759158510446" duration="5109000" />
     </task>
     <task id="LOCAL-00001" summary="Basic front-end and class tree">
       <option name="closed" value="true" />
@@ -421,7 +405,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759075042192</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="English only. Script expanded. History page added.">
+      <option name="closed" value="true" />
+      <created>1759163035210</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1759163035210</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,6 +433,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Basic front-end and class tree" />
     <MESSAGE value="Game Logic, Servlets, Logger, Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game Logic, Servlets, Logger, Tests" />
+    <MESSAGE value="English only. Script expanded. History page added." />
+    <option name="LAST_COMMIT_MESSAGE" value="English only. Script expanded. History page added." />
   </component>
 </project>

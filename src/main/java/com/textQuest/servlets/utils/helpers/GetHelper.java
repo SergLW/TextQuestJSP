@@ -27,8 +27,8 @@ public final class GetHelper {
             req.setAttribute("trueLabel", questionState.trueLabel());
             req.setAttribute("falseLabel", questionState.falseLabel());
         } else {
-            req.setAttribute("trueLabel", "Так");
-            req.setAttribute("falseLabel", "Hi");
+            req.setAttribute("trueLabel", "Yes");
+            req.setAttribute("falseLabel", "No");
         }
     }
 }

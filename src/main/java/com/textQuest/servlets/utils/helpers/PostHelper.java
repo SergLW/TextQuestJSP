@@ -39,7 +39,7 @@ public final class PostHelper {
             QuestionState questionState = (QuestionState) beforeState;
             return isTrue ? questionState.trueLabel() : questionState.falseLabel();
         }
-        return isTrue ? "Tak" : "Hi";
+        return isTrue ? "Yes" : "No";
     }
 
     public void addHistory(HttpSession session, GameState beforeState, String chosenLabel) {

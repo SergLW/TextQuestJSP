@@ -15,9 +15,9 @@ class GameEngineTest {
     @Test
     void answer_onWin_isNo() {
         GameEngine gameEngine = GameFactory.newGame();
-        gameEngine.answer(true);
-        gameEngine.answer(true);
-        gameEngine.answer(true);
+        for (int i = 0; i < 6; i++) {
+            gameEngine.answer(true);
+        }
 
         GameState before = gameEngine.currentState();
         assertEquals(SceneType.WIN, before.sceneType());

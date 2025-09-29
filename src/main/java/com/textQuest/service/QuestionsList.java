@@ -17,29 +17,54 @@ public final class QuestionsList {
     }
 
     static {
-        //QUESTIONS
         QUESTIONS.put(Q1_INTRO, new Question(
-                "Ви втрачаєте пам'ять. Прийняти виклик НЛО?",
-                "Прийняти виклик.",
-                "Відхилити виклик."
+                "You’re losing your memory. Answer the UFO call?",
+                "Answer the call.",
+                "Ignore the call."
         ));
         QUESTIONS.put(Q2_GO_BRIDGE, new Question(
-                "Ви прийняли виклик. Піднятися на капітанський місток?",
-                "Піднятися на місток.",
-                "Відмовитися підніматися на місток."
+                "You answered the call. Go up to the captain’s bridge?",
+                "Go to the bridge.",
+                "Stay where you are."
         ));
-        QUESTIONS.put(Q3_ABOUT_MYSEFT, new Question(
-                "Ви піднялися на місток. Хто ви?",
-                "Розповісти правду про себе.",
-                "Збрехати про себе."
+        QUESTIONS.put(Q3_ABOUT_MYSELF, new Question(
+                "You reached the bridge. Who are you?",
+                "Tell the truth about yourself.",
+                "Lie about yourself."
         ));
-        //WINS
-        WINS.put(WIN_1, "Вас повернули додому.");
-        //LOSES
-        LOSES.put(LOSE_1_REFUSE, "Ви відхилили виклик.");
-        LOSES.put(LOSE_2_REFUSE_GO, "Ви відмовилися йти на переговори. ");
-        LOSES.put(LOSE_3_LIE, "Ваша брехня була розкрита.");
+        QUESTIONS.put(Q4_SCAN, new Question(
+                "They propose a quick bioscan to verify you. Do you agree?",
+                "Agree to the scan.",
+                "Refuse the scan."
+        ));
+        QUESTIONS.put(Q4_NEGOTIATE, new Question(
+                "They want to negotiate terms to send you home. Do you negotiate?",
+                "Negotiate the terms.",
+                "Decline to negotiate."
+        ));
+        QUESTIONS.put(Q5_MEMORY_TEST, new Question(
+                "Before sending you home, they ask for a memory integrity test. Take it?",
+                "Take the test.",
+                "Refuse the test."
+        ));
+        QUESTIONS.put(Q6_HELP_TRANSLATOR, new Question(
+                "Their translator is glitchy. Will you help calibrate it?",
+                "Help with calibration.",
+                "Skip and go home now."
+        ));
+
+        // WINS
+        WINS.put(WIN_HOME_SAFE, "They safely return you home.");
+        WINS.put(WIN_ALLIANCE, "You forge a small alliance and are returned home with new friends.");
+
+        // LOSES
+        LOSES.put(LOSE_REFUSE_CALL, "You ignored the call.");
+        LOSES.put(LOSE_REFUSE_BRIDGE, "You refused to go to the bridge.");
+        LOSES.put(LOSE_REFUSE_TEST, "You refused verification. They won’t take the risk.");
+        LOSES.put(LOSE_PANIC, "You panicked and broke protocol. The meeting ended.");
     }
+
+
 
     public static Question getQuestion(SceneID sceneID) {
         return QUESTIONS.get(sceneID);

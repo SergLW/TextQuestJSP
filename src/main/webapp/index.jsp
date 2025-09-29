@@ -1,9 +1,9 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!doctype html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Text Quest — Головна</title>
+    <title>Text Quest — Main</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/main.css" rel="stylesheet">
@@ -19,8 +19,8 @@
         </button>
         <div id="nav" class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="${pageContext.request.contextPath}/">Головна</a></li>
-                <li class="nav-item"><a class="nav-link disabled" href="#" aria-disabled="true">Історія</a></li>
+                <li class="nav-item"><a class="nav-link active" href="${pageContext.request.contextPath}/">Main</a></li>
+                <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/story">Story</a></li>
             </ul>
         </div>
     </div>
@@ -31,10 +31,10 @@
         <div class="container py-5">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-8">
-                    <h1 class="display-5 fw-bold mb-3">Виклик НЛО і втрата пам'яті</h1>
-                    <p class="lead mb-4">Чи зможеш ти чесно відповісти на питання? Від відповідей залежить твоя доля.</p>
+                    <h1 class="display-5 fw-bold mb-3">UFO Call and Memory Loss</h1>
+                    <p class="lead mb-4">Can you answer honestly? Your fate depends on your choices.</p>
                     <form method="post" action="${pageContext.request.contextPath}/main" class="d-inline-block">
-                        <button class="btn btn-primary btn-lg px-4">Почати квест</button>
+                        <button class="btn btn-primary btn-lg px-4">Start the Quest</button>
                     </form>
                 </div>
             </div>
@@ -47,24 +47,24 @@
                 <div class="col">
                     <div class="card shadow-sm feature-card">
                         <div class="card-body">
-                            <h2 class="h5">Мінімалізм механік</h2>
-                            <p class="text-muted mb-0">На кожному кроці лише два варіанти. А наслідки — зовсім не прості.</p>
+                            <h2 class="h5">Minimalist Mechanics</h2>
+                            <p class="text-muted mb-0">At every step you have only two options. But the consequences are not simple at all.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card shadow-sm feature-card">
                         <div class="card-body">
-                            <h2 class="h5">Адаптивний інтерфейс</h2>
-                            <p class="text-muted mb-0">Можна грати на телефоні, планшеті та десктопі.</p>
+                            <h2 class="h5">Responsive Interface</h2>
+                            <p class="text-muted mb-0">Play on your phone, tablet, or desktop.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card shadow-sm feature-card">
                         <div class="card-body">
-                            <h2 class="h5">Історія рішень</h2>
-                            <p class="text-muted mb-0">Будь обережний - ведеться запис кожного твого вибору.</p>
+                            <h2 class="h5">Decision History</h2>
+                            <p class="text-muted mb-0">Be careful — every choice you make is recorded.</p>
                         </div>
                     </div>
                 </div>
@@ -76,11 +76,11 @@
         <div class="container">
             <div class="row align-items-center gy-4">
                 <div class="col-md-6">
-                    <h2 class="h4 mb-3">Незабаром: Історія</h2>
+                    <h2 class="h4 mb-3">Backstory</h2>
                     <p class="text-muted mb-4">
-                        Ми готуємо сторінку з передісторією.
+                        Learn the mysterious events that led you aboard the alien ship.
                     </p>
-                    <a class="btn btn-outline-secondary disabled" href="#" aria-disabled="true">Історія</a>
+                    <a class="btn btn-outline-secondary" href="${pageContext.request.contextPath}/story">Story</a>
                 </div>
                 <div class="col-md-6 text-center">
                     <div style="font-size:96px;line-height:1">📖✨</div>

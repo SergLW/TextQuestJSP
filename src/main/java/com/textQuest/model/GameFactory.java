@@ -42,7 +42,9 @@ public class GameFactory {
             ));
         }
 
-        List<SceneID> winId = Arrays.asList(WIN_1);
+        List<SceneID> winId = Arrays.asList(
+                WIN_HOME_SAFE,
+                WIN_ALLIANCE);
         for (SceneID win : winId) {
             String text = QuestionsList.winText(win);
             if (text != null) {
@@ -51,9 +53,10 @@ public class GameFactory {
         }
 
         List<SceneID> loseIds = Arrays.asList(
-                LOSE_1_REFUSE,
-                LOSE_2_REFUSE_GO,
-                LOSE_3_LIE
+                LOSE_PANIC,
+                LOSE_REFUSE_BRIDGE,
+                LOSE_REFUSE_TEST,
+                LOSE_REFUSE_CALL
         );
         for (SceneID lose : loseIds) {
             String text = QuestionsList.loseText(lose);

@@ -9,23 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b0d510f-12bb-4903-b7e4-c6873f125a1a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/GameLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/GameState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/SceneType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/service/QuestionsList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/_layout/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/_layout/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/QuestionsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/QuestionsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/StartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/StartServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/game.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/game.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/lose.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/lose.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/win.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/win.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+    <list default="true" id="2b0d510f-12bb-4903-b7e4-c6873f125a1a" name="Changes" comment="Add Exceptions, small fix.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/model/GameEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/GameEngine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +20,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="CSS File" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -46,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="basic-front-end-and-class-tree" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,32 +65,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.Text_Quest_JSP [-q,dependency:tree,|...].executor": "Run",
-    "Maven.Text_Quest_JSP [-q,dependency:tree].executor": "Run",
-    "Maven.Text_Quest_JSP [clean].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Tomcat Server.Tomcat 9.0.108.executor": "Run",
-    "git-widget-placeholder": "basic-front-end-and-class-tree",
-    "kotlin-language-version-configured": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.GameEngineTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GameFactoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SessionGameHistoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StepTokenTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Text_Quest_JSP [-q,-U,clean,test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Text_Quest_JSP [-q,dependency:tree,|...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Text_Quest_JSP [-q,dependency:tree].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Text_Quest_JSP [clean].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.108.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;logic-servlets-logs-tests&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cen9i\JRProjects\Text_Quest_JSP\src\main\webapp\WEB-INF\jsp" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.textQuest.model" />
+      <recent name="com.textQuest.model.scene" />
+      <recent name="com.textQuest.service" />
+      <recent name="com.textQuest.model.states" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.textQuest.servlets.utils" />
+      <recent name="com.textQuest.model" />
+      <recent name="com.textQuest.servlets.utils.history" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn -q dependency:tree | grep -E &quot;servlet|jsp|jstl|jakarta&quot;" />
       <command value="mvn -q dependency:tree " />
+      <command value="mvn -q -U clean test" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -120,7 +133,67 @@
       </map>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.108">
+    <configuration name="GameEngineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Text_Quest_JSP (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.textQuest.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.textQuest.model" />
+      <option name="MAIN_CLASS_NAME" value="com.textQuest.model.GameEngineTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Text_Quest_JSP (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.textQuest.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.textQuest.model" />
+      <option name="MAIN_CLASS_NAME" value="com.textQuest.model.GameFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SessionGameHistoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Text_Quest_JSP (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.textQuest.servlets.utils.history.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.textQuest.servlets.utils.history" />
+      <option name="MAIN_CLASS_NAME" value="com.textQuest.servlets.utils.history.SessionGameHistoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StepTokenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Text_Quest_JSP (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.textQuest.servlets.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.textQuest.servlets.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.textQuest.servlets.utils.StepTokenTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.108" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.108" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -285,6 +358,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GameEngineTest" />
+        <item itemvalue="JUnit.StepTokenTest" />
+        <item itemvalue="JUnit.GameFactoryTest" />
+        <item itemvalue="JUnit.SessionGameHistoryTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -303,8 +384,56 @@
       <updated>1758377705595</updated>
       <workItem from="1758377706550" duration="5693000" />
       <workItem from="1758450418325" duration="12421000" />
-      <workItem from="1758472095275" duration="3113000" />
+      <workItem from="1758472095275" duration="3917000" />
+      <workItem from="1758555139430" duration="6904000" />
+      <workItem from="1758731399300" duration="1322000" />
+      <workItem from="1758983513434" duration="10609000" />
+      <workItem from="1759051043346" duration="23421000" />
+      <workItem from="1759158510446" duration="5109000" />
+      <workItem from="1759174339968" duration="77000" />
+      <workItem from="1759330910224" duration="5600000" />
     </task>
+    <task id="LOCAL-00001" summary="Basic front-end and class tree">
+      <option name="closed" value="true" />
+      <created>1758476574706</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758476574706</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Game Logic, Servlets, Logger, Tests">
+      <option name="closed" value="true" />
+      <created>1759075042192</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1759075042192</updated>
+    </task>
+    <task id="LOCAL-00003" summary="English only. Script expanded. History page added.">
+      <option name="closed" value="true" />
+      <created>1759163035210</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1759163035210</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Small text fix">
+      <option name="closed" value="true" />
+      <created>1759174402025</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1759174402025</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add Exceptions, small fix.">
+      <option name="closed" value="true" />
+      <created>1759337627151</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1759337627151</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,5 +449,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Basic front-end and class tree" />
+    <MESSAGE value="Game Logic, Servlets, Logger, Tests" />
+    <MESSAGE value="English only. Script expanded. History page added." />
+    <MESSAGE value="Small text fix" />
+    <MESSAGE value="Add Exceptions, small fix." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Exceptions, small fix." />
   </component>
 </project>

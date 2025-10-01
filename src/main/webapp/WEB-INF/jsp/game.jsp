@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<% request.setAttribute("pageTitle", "Питання"); %>
+<% request.setAttribute("pageTitle", "Question"); %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <% request.setAttribute("bodyClass", "page-game");%>
 
@@ -8,22 +8,22 @@
 <div class="row gy-4 justify-content-center">
     <div class="col-lg-8">
         <div class="d-flex justify-content-between align-items-center mb-3">
-            <a class="btn btn-outline-secondary" href="${pageContext.request.contextPath}/">⟵ Вийти</a>
-            <span class="badge text-bg-secondary">Сесія активна</span>
+            <a class="btn btn-outline-secondary" href="${pageContext.request.contextPath}/">⟵ Exit</a>
+            <span class="badge text-bg-secondary">Session active</span>
         </div>
 
         <div class="card shadow-sm mb-4">
             <div class="card-body">
-                <h2 class="h4 mb-3">Питання</h2>
+                <h2 class="h4 mb-3">Question</h2>
                 <p class="fs-5 mb-4"><c:out value="${state.text()}"/></p>
 
                 <form method="post" action="${pageContext.request.contextPath}/game" class="d-flex gap-2 flex-wrap">
                     <input type="hidden" name="stepToken" value="${sessionScope.stepToken}">
-                    <button name="answer" value="yes" class="btn btn-success btn-lg">
-                        <c:out value="${trueLabel  != null ? trueLabel : 'Так'}"/>
+                    <button name="answer" value="true" class="btn btn-success btn-lg">
+                        <c:out value="${trueLabel}"/>
                     </button>
-                    <button name="answer" value="no" class="btn btn-danger btn-lg">
-                        <c:out value="${falseLabel  != null ? falseLabel  : 'Ні'}"/>
+                    <button name="answer" value="false" class="btn btn-danger btn-lg">
+                        <c:out value="${falseLabel}"/>
                     </button>
                 </form>
             </div>
@@ -31,8 +31,8 @@
 
         <div class="card shadow-sm">
             <div class="card-header d-flex justify-content-between align-items-center">
-                <span>Історія рішень</span>
-                <span class="text-muted small">(лише видимі події)</span>
+                <span>Decision History</span>
+                <span class="text-muted small">(only visible events)</span>
             </div>
             <div class="card-body">
                 <c:choose>
@@ -49,7 +49,7 @@
                         </ul>
                     </c:when>
                     <c:otherwise>
-                        <div class="text-muted">Історія порожня. Зробіть перший вибір.</div>
+                        <div class="text-muted">History is empty. Make your first choice.</div>
                     </c:otherwise>
                 </c:choose>
             </div>

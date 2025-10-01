@@ -14,7 +14,7 @@ public final class GameEngine {
     public GameEngine(Map<String, GameState> states, String startId) {
         this.states = Objects.requireNonNull(states);
         if (!states.containsKey(startId)) {
-            throw new IllegalStateException(startId + " (StartId)");
+            throw new InvalidStateException(startId + " (StartId)");
         }
         this.currentId = startId;
     }

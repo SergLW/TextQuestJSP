@@ -1,5 +1,6 @@
 package com.textQuest.model;
 
+import com.textQuest.exceptions.InvalidStateException;
 import com.textQuest.model.scene.SceneType;
 import com.textQuest.model.state.GameState;
 
@@ -13,7 +14,7 @@ public final class GameEngine {
     public GameEngine(Map<String, GameState> states, String startId) {
         this.states = Objects.requireNonNull(states);
         if (!states.containsKey(startId)) {
-            throw new IllegalArgumentException(startId + " not found");
+            throw new IllegalStateException(startId + " (StartId)");
         }
         this.currentId = startId;
     }
@@ -29,7 +30,7 @@ public final class GameEngine {
 
         GameState nextState = states.get(nextId);
         if (nextState == null) {
-            throw new IllegalStateException(nextId + " not found");
+            throw new InvalidStateException(nextId + " (nextId");
         }
         currentId = nextId;
     }

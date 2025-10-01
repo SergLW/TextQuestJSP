@@ -70,6 +70,7 @@ public final class LastPostHelper {
         try {
             session.invalidate();
         } catch (IllegalStateException e) {
+            log.debug("Session already invalidated", e);
         }
         resp.sendRedirect(req.getContextPath() + "/main");
     }

@@ -1,5 +1,6 @@
 package com.textQuest.model;
 
+import com.textQuest.exceptions.InvalidQuestionException;
 import com.textQuest.model.scene.SceneID;
 import com.textQuest.model.scene.SceneType;
 import com.textQuest.model.state.GameState;
@@ -29,7 +30,7 @@ public class GameFactory {
 
             Question question = QuestionsList.getQuestion(key);
             if (question == null) {
-                throw new IllegalStateException("No question found for key: " + key);
+                throw new InvalidQuestionException(key);
             }
 
             states.put(key.id(), new QuestionState(

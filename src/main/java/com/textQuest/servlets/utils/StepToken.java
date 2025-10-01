@@ -1,10 +1,15 @@
 package com.textQuest.servlets.utils;
 
+import com.textQuest.exceptions.InvalidTokenException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.servlet.http.HttpSession;
 import java.util.UUID;
 
 public final class StepToken {
     private final static String KEY = "stepToken";
+    private static final Logger log = LoggerFactory.getLogger(StepToken.class);
 
     private StepToken() {}
 
@@ -14,8 +19,9 @@ public final class StepToken {
 
     public static void validateToken(HttpSession session, String token) {
         String expectedToken = (String) session.getAttribute(KEY);
-        if (!expectedToken.equals(token) || expectedToken == null || token == null) {
-            throw new IllegalStateException("Invalid token");
+        if (expectedToken == null || token == null || !expectedToken.equals(token)) {
+            log. warn("Invalid Step Token (expected={}, provided={})",  expectedToken, token);
+            throw new InvalidTokenException(expectedToken, token);
         }
     }
 

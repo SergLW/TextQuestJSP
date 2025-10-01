@@ -9,7 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b0d510f-12bb-4903-b7e4-c6873f125a1a" name="Changes" comment="English only. Script expanded. History page added." />
+    <list default="true" id="2b0d510f-12bb-4903-b7e4-c6873f125a1a" name="Changes" comment="Small text fix">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/exceptions/GameException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/exceptions/InvalidQuestionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/exceptions/InvalidStateException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/exceptions/InvalidTokenException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/model/GameEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/GameEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/model/GameFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/model/GameFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/utils/StepToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/utils/StepToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/utils/StepTokenFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/utils/helpers/LastPostHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textQuest/servlets/utils/helpers/LastPostHelper.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -388,6 +399,8 @@
       <workItem from="1758983513434" duration="10609000" />
       <workItem from="1759051043346" duration="23421000" />
       <workItem from="1759158510446" duration="5109000" />
+      <workItem from="1759174339968" duration="77000" />
+      <workItem from="1759330910224" duration="5056000" />
     </task>
     <task id="LOCAL-00001" summary="Basic front-end and class tree">
       <option name="closed" value="true" />
@@ -413,7 +426,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759163035210</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Small text fix">
+      <option name="closed" value="true" />
+      <created>1759174402025</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1759174402025</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,6 +455,7 @@
     <MESSAGE value="Basic front-end and class tree" />
     <MESSAGE value="Game Logic, Servlets, Logger, Tests" />
     <MESSAGE value="English only. Script expanded. History page added." />
-    <option name="LAST_COMMIT_MESSAGE" value="English only. Script expanded. History page added." />
+    <MESSAGE value="Small text fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small text fix" />
   </component>
 </project>

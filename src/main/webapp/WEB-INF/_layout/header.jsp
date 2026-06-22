@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,8 +18,8 @@
         </button>
         <div id="nav" class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/">Головна</a></li>
-                <li class="nav-item"><a class="nav-link disabled" href="#">Історія</a></li>
+                <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/">Main</a></li>
+                <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/story">Story</a></li>
             </ul>
         </div>
     </div>

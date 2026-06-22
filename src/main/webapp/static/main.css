@@ -22,3 +22,7 @@ body.page-win {
 body.page-lose {
     background: url("../static/img/lose-bg.jpg") center/cover no-repeat fixed;
 }
+
+body.page-story {
+    background: url("../static/img/story-bg.webp") center/cover no-repeat fixed;
+}
